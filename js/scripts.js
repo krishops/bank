@@ -34,7 +34,23 @@ function BankAccount(name, initialDeposit) {
   this.accountTotal = initialDeposit;
 }
 
+
+//UI Logic
+let bankRecords = new Records();
+
 $(document).ready(function() {
+  $("form#add-account").submit(function(event)  {
+    event.preventDefault();
+    const inputtedName = $("input#new-account-name").val();
+    const inputtedInitialDeposit = parseInt($("input#initial-deposit").val());
+    const inputtedDeposit = parseInt($("input#deposit-funds").val());
+    const inputtedWithdrawal = parseInt($("input#withdraw-funds").val());
+    let newAccount = new BankAccount(inputtedName, inputtedInitialDeposit);
+    bankRecords.deposit(id, inputtedDeposit);
+    bankRecords.withdrawal(id, inputtedWithdrawal);
+    bankRecords.addAccount(newAccount);
+    console.log(newAccount);
+  })
   
 });
 

@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bank Account</title>
 </head>
+
 <body>
-  <form>
-    
-  </form>
-  
+  <div class="container">
+    <h1>Welcome to the Epicodus Credit Union</h1>
+    <div class="col-md-6">
+      <div class="register-box">
+        <h4>Register a new account</h2>
+          <form id="add-account">
+            <div class="form-group">
+              <label for="new-account-name">Name:</label>
+              <input type="text" id="new-account-name">
+            </div>
+            <div class="form-group">
+              <label for="initial-deposit">Initial Deposit:</label>
+              <input type="text" id="initial-deposit">
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="withdraw-box">
+        <h4>Deposit or Withdraw Funds</h4>
+        <form id="deposit-withdraw">
+          <div class="form-group">
+            <label for="deposit-funds">Deposit Funds:</label>
+            <input type="text" id="deposit-funds">
+          </div>
+          <div class="form-group">
+            <label for="withdraw-funds">Withdraw Funds:</label>
+            <input type="text" id="withdraw-funds">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    </form>
+
 </body>
+
 </html>
